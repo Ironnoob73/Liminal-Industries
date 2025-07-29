@@ -11,9 +11,9 @@
 		{
 			dependencies: ["2FD58013123EFE42"]
 			description: [
-				"You can use brushes to sweep up the carpet for carpet dust."
+				"{quest.1.sweeping.desc0}"
 				""
-				"&oNote: The effects of long term carpet dust exposure are unknown."
+				"{quest.1.sweeping.desc1}"
 			]
 			icon: {
 				Count: 1
@@ -28,7 +28,7 @@
 				item: "kubejs:party_popper"
 				type: "item"
 			}]
-			subtitle: "Do not Inhale this..."
+			subtitle: "{quest.1.sweeping.subtitle}"
 			tasks: [
 				{
 					id: "2A319853160BB950"
@@ -48,7 +48,7 @@
 					type: "item"
 				}
 			]
-			title: "This Place could use some Sweeping"
+			title: "{quest.1.sweeping.title}"
 			x: 0.0d
 			y: 11.0d
 		}
@@ -57,7 +57,7 @@
 				"307781E736AB9A56"
 				"03026FA82293D305"
 			]
-			description: ["If you are lost on how to construct an Alloy Kiln, then please refer to the Engineers Manual."]
+			description: ["{quest.1.alloy_smelter.desc0}"]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "7A0ECC4384FC5F3C"
 			rewards: [
@@ -67,19 +67,18 @@
 					type: "item"
 				}
 				{
-					id: "430798C9188E73BD"
+					id: "1C1137CC8210E5E9"
 					item: "immersiveengineering:manual"
 					type: "item"
 				}
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "There is Always a Bigger Furnace"
+			subtitle: "{quest.1.alloy_smelter.subtitle}"
 			tasks: [
 				{
-					count: 8L
 					id: "6BB57F03AEAB3265"
-					item: { Count: 8, id: "immersiveengineering:alloybrick" }
+					item: "immersiveengineering:alloybrick"
 					type: "item"
 				}
 				{
@@ -94,13 +93,13 @@
 					type: "item"
 				}
 			]
-			title: "Slightly Bigger Furnace"
+			title: "{quest.1.alloy_smelter.title}"
 			x: 0.0d
 			y: 23.0d
 		}
 		{
 			dependencies: ["74DC667B840746B0"]
-			description: ["Wooden tools are essential to your succes. You can use knifes to cut up the carpet, revealing the concrete tiles underneath..."]
+			description: ["{quest.1.wooden_tools.desc0}"]
 			icon: {
 				Count: 1
 				id: "farmersdelight:flint_knife"
@@ -109,7 +108,12 @@
 				}
 			}
 			id: "2FD58013123EFE42"
-			subtitle: "The setup for succes"
+			rewards: [{
+				id: "547E5FE35878E38A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "{quest.1.wooden_tools.subtitle}"
 			tasks: [
 				{
 					id: "45A5F6CD9D1D337B"
@@ -139,17 +143,17 @@
 					type: "item"
 				}
 			]
-			title: "Wooden Tools"
+			title: "{quest.1.wooden_tools.title}"
 			x: 0.0d
 			y: 5.5d
 		}
 		{
 			description: [
-				"If you have not yet adjusted to your new liminal environment. Then don't worry, let us make our own base and make it a bit more cozy."
+				"{quest.1.punching_chairs.desc0}"
 				""
-				"The random furniture scattered across the backrooms could probably be repurposed into planks to increase your chance of survival. "
+				"{quest.1.punching_chairs.desc1}"
 				""
-				"Let's get started with making a crafting table. Start with crafting a chair into planks."
+				"{quest.1.punching_chairs.desc2}"
 			]
 			icon: "refurbished_furniture:oak_chair"
 			id: "74DC667B840746B0"
@@ -158,56 +162,33 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			size: 2.0d
-			subtitle: "Welcome to Liminal Industries!"
+			size: 3.0d
+			subtitle: "{quest.1.punching_chairs.subtitle}"
 			tasks: [{
 				id: "06B5515FE776BEBA"
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			title: "Punching Chairs"
+			title: "{quest.1.punching_chairs.title}"
 			x: 0.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["7A8C680427F1464B"]
+			description: ["{quest.1.clay.desc0}"]
 			id: "307781E736AB9A56"
-			rewards: [
-				{
-					count: 5
-					id: "491C985D1F430C15"
-					item: "minecraft:flower_pot"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "4A5576C457341C87"
-					item: "minecraft:decorated_pot"
-					type: "item"
-				}
-				{
-					id: "3E61094F277A80B3"
-					item: "minecraft:poppy"
-					type: "item"
-				}
-				{
-					id: "0E3FB0E7B71A1759"
-					item: "minecraft:dandelion"
-					type: "item"
-				}
-				{
-					id: "4A7CA41B7D3F4C2E"
-					item: "minecraft:lily_of_the_valley"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1CB3AA5AC0E7C60B"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
 			tasks: [{
 				count: 5L
 				id: "5D105029246CD738"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			title: "Making Clay"
+			title: "{quest.1.clay.title}"
 			x: 0.0d
 			y: 19.0d
 		}
@@ -231,9 +212,8 @@
 					type: "item"
 				}
 				{
-					count: 64L
 					id: "51C12C0C1E46DF26"
-					item: { Count: 64, id: "kubejs:concrete_piece" }
+					item: "kubejs:concrete_piece"
 					type: "item"
 				}
 				{
@@ -252,7 +232,7 @@
 					type: "item"
 				}
 			]
-			title: "Liquid Rock"
+			title: "{quest.1.lava.title}"
 			x: 0.0d
 			y: 25.5d
 		}
@@ -262,14 +242,36 @@
 				"7B8E3CF8E588CD0B"
 			]
 			id: "203FC15B09EAA27F"
-			size: 2.0d
-			subtitle: "Entering the Stone Age"
+			rewards: [
+				{
+					id: "7702AB4C3CA3AEB6"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "3D1642878BF69221"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "0AEBC47A7574DDF2"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+				{
+					id: "691106A4CBAFB25D"
+					item: "minecraft:music_disc_relic"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "{quest.1.cobblestone.subtitle}"
 			tasks: [{
 				id: "405232540EBBD06E"
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			title: "Cobblestone Generator"
+			title: "{quest.1.cobblestone.title}"
 			x: 0.0d
 			y: 28.0d
 		}
@@ -294,22 +296,25 @@
 				match_nbt: true
 				type: "item"
 			}]
-			title: "Liquid Water"
+			title: "{quest.1.water.title}"
 			x: -5.0d
 			y: 23.5d
 		}
 		{
 			dependencies: ["2FD58013123EFE42"]
 			description: [
-				"You can collect water by right-clicking Soggy Carpet with a sponge."
+				"{quest.1.collecting_water.desc0}"
 				""
-				"Soggy Carpet can be found all throughout the backrooms. It is slightly darker than normal carpet."
+				"{quest.1.collecting_water.desc1}"
+				""
+				"{quest.1.collecting_water.desc2}"
+				"{quest.1.collecting_water.desc3}"
 				""
 				"{image:kubejs:textures/quests/wet_carpet.png width:192 height:102 align:center}"
 			]
 			icon: "minecraft:wet_sponge"
 			id: "6C636EA05BA437ED"
-			subtitle: "I like my Carpet Soggy"
+			subtitle: "{quest.1.collecting_water.subtitle}"
 			tasks: [
 				{
 					id: "4F9338A63C2CC4A7"
@@ -322,16 +327,16 @@
 					type: "item"
 				}
 			]
-			title: "Collecting Water"
+			title: "{quest.1.collecting_water.title}"
 			x: -5.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["2FD58013123EFE42"]
 			description: [
-				"You can cut open the carpet using a knife, revealing some strange concrete tiles underneath."
+				"{quest.1.vandalism.desc0}"
 				""
-				"With a wooden pickaxe you can mine your newly discovered concrete tiles for small pieces of concrete."
+				"{quest.1.vandalism.desc1}"
 				""
 				"{image:kubejs:textures/quests/cut_carpet.png width:192 height:102 align:center}"
 			]
@@ -342,7 +347,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "Haha, its destroyed"
+			subtitle: "{quest.1.vandalism.subtitle}"
 			tasks: [
 				{
 					id: "636C89317E81121C"
@@ -355,13 +360,13 @@
 					type: "item"
 				}
 			]
-			title: "Vandalism"
+			title: "{quest.1.vandalism.title}"
 			x: 5.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["23E590694FAB22A1"]
-			description: ["You can make a furnace out of concrete pieces for all your smelting needs."]
+			description: ["{quest.1.furnace.desc0}"]
 			id: "03026FA82293D305"
 			tasks: [{
 				id: "76DA42855E8AC469"
@@ -373,10 +378,10 @@
 		}
 		{
 			dependencies: ["2FD58013123EFE42"]
-			description: ["You can gain additional wood by placing wooden furniture on top of a chopping board and chopping it with an axe."]
+			description: ["{quest.1.chopping.desc0}"]
 			icon: "farmersdelight:cutting_board"
 			id: "4E7AB902FFF70225"
-			subtitle: "Reverse Carpenter"
+			subtitle: "{quest.1.chopping.subtitle}"
 			tasks: [
 				{
 					id: "7856BB129C2D3B9F"
@@ -395,18 +400,18 @@
 					type: "item"
 				}
 			]
-			title: "More Wood With Careful Chopping"
+			title: "{quest.1.chopping.title}"
 			x: 2.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["7FAC527C8C32346A"]
 			description: [
-				"You might have found out about the carpet inhabitants by now. The eggs they drop are a good source of protiene."
+				"{quest.1.meal.desc0}"
 				""
-				"Killing them with a knife will drop additional eggs."
+				"{quest.1.meal.desc1}"
 				""
-				"They have an aquired taste, however..."
+				"{quest.1.meal.desc2}"
 			]
 			icon: "miners_delight:weird_caviar"
 			id: "77AB8365642DA7B1"
@@ -416,7 +421,7 @@
 				item: "miners_delight:weird_caviar"
 				type: "item"
 			}]
-			subtitle: "Crush with Blade, Releases Juice Better"
+			subtitle: "{quest.1.meal.subtitle}"
 			tasks: [
 				{
 					id: "4A871C44E099B727"
@@ -441,17 +446,20 @@
 					type: "item"
 				}
 			]
-			title: "Technically a Meal"
+			title: "{quest.1.meal.title}"
 			x: 2.5d
 			y: 13.5d
 		}
 		{
 			dependencies: ["7A8C680427F1464B"]
 			description: [
-				"The seeds that you found in the carpet can be put to good use."
-				"They can be planted on Soggy Carpet."
+				"{quest.1.berry.desc0}"
+				"{quest.1.berry.desc1}"
 				""
-				"Do note that they need sufficient light in order to grow. So make sure you pick the right spot."
+				"{quest.1.berry.desc2}"
+				""
+				"{quest.1.berry.desc3}"
+				"{quest.1.berry.desc4}"
 			]
 			icon: "neapolitan:strawberries"
 			id: "4D215AD91B14D558"
@@ -492,7 +500,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Starting a Farm"
+			subtitle: "{quest.1.berry.subtitle}"
 			tasks: [
 				{
 					id: "39C33E62CB0181AE"
@@ -505,7 +513,7 @@
 					type: "item"
 				}
 			]
-			title: "Berry Good"
+			title: "{quest.1.berry.title}"
 			x: -2.5d
 			y: 18.5d
 		}
@@ -515,8 +523,13 @@
 				"7FAC527C8C32346A"
 			]
 			description: [
-				"You can use wet sponges as a source of washing. "
-				"The fan will blow right through it."
+				"{quest.1.wooden_propeller.desc0}"
+				""
+				"{quest.1.wooden_propeller.desc1}"
+				"{quest.1.wooden_propeller.desc2}"
+				""
+				""
+				"{image:kubejs:textures/quests/wet_sponge.png width:222 height:128 align:center}"
 			]
 			icon: "create:propeller"
 			id: "7A8C680427F1464B"
@@ -540,7 +553,7 @@
 				}
 			]
 			shape: "gear"
-			subtitle: "Liminal Splashing"
+			subtitle: "{quest.1.wooden_propeller.subtitle}"
 			tasks: [
 				{
 					id: "15725A51724F494F"
@@ -548,23 +561,33 @@
 					type: "item"
 				}
 				{
-					id: "507A3C462D4627F5"
+					id: "4AACB45E50D46CC0"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+				{
+					id: "5909FBFE17750276"
 					item: "create:encased_fan"
 					type: "item"
 				}
 				{
-					id: "69FC391F59E5798C"
+					id: "669F07A8B29FAEAC"
 					item: "minecraft:wet_sponge"
 					type: "item"
 				}
+				{
+					id: "660E81FF3900602F"
+					item: "create:hand_crank"
+					type: "item"
+				}
 			]
-			title: "Wooden Propeller"
+			title: "{quest.1.wooden_propeller.title}"
 			x: 0.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["2FD58013123EFE42"]
-			description: ["You can scrape the wallpaper off the walls using any axe. This can provide the resources to make a small backpack."]
+			description: ["{quest.1.bags.desc0}"]
 			icon: "supplementaries:sack"
 			id: "09DBA6DD7E5621CB"
 			rewards: [{
@@ -572,7 +595,7 @@
 				item: "supplementaries:sack"
 				type: "item"
 			}]
-			subtitle: "We are going on an Adventure!"
+			subtitle: "{quest.1.bags.subtitle}"
 			tasks: [
 				{
 					count: 7L
@@ -591,18 +614,18 @@
 					type: "item"
 				}
 			]
-			title: "Pack your bags"
+			title: "{quest.1.bags.title}"
 			x: -2.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["2FD58013123EFE42"]
 			description: [
-				"Some parts of these rooms seem to be infected with sculk. It's probably best to stay as far away from the stuff as possible."
+				"{quest.1.stay_safe.desc0}"
 				""
-				"Barricading corridors to infected rooms might also prove an effective tactic."
+				"{quest.1.stay_safe.desc1}"
 				""
-				"Stay safe!"
+				"{quest.1.stay_safe.desc2}"
 			]
 			icon: "kubejs:explantion2_sign"
 			id: "49C5EB9D0E33ACA4"
@@ -626,16 +649,314 @@
 				}
 			]
 			shape: "square"
-			subtitle: "Turn away when you see sculk"
+			subtitle: "{quest.1.stay_safe.subtitle}"
 			tasks: [{
 				id: "7CC2D7594F90E20C"
-				title: "Whats the worst that could happen?"
+				title: "{quest.1.stay_safe.check}"
 				type: "checkmark"
 			}]
-			title: "Stay Safe"
+			title: "{quest.1.stay_safe.title}"
 			x: 2.5d
 			y: 5.5d
 		}
+		{
+			can_repeat: true
+			dependencies: ["2FD58013123EFE42"]
+			icon: {
+				Count: 1
+				id: "eccentrictome:tome"
+				tag: {
+					Enchantments: [ ]
+					"eccentrictome:mods": {
+						actuallyadditions: {
+							0: {
+								Count: 1b
+								id: "actuallyadditions:booklet"
+							}
+						}
+						ae2: {
+							0: {
+								Count: 1b
+								id: "ae2:guide"
+								tag: {
+									Enchantments: [ ]
+								}
+							}
+						}
+						botania: {
+							0: {
+								Count: 1b
+								id: "botania:lexicon"
+							}
+						}
+						eidolon: {
+							0: {
+								Count: 1b
+								id: "eidolon:codex"
+								tag: {
+									Enchantments: [ ]
+								}
+							}
+						}
+						ftbquests: {
+							0: {
+								Count: 1b
+								id: "ftbquests:book"
+								tag: {
+									Enchantments: [ ]
+								}
+							}
+						}
+						immersiveengineering: {
+							0: {
+								Count: 1b
+								id: "immersiveengineering:manual"
+							}
+						}
+						patchouli: {
+							0: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "patchouli:summoning"
+								}
+							}
+							1: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									Enchantments: [ ]
+									"patchouli:book": "patchouli:reality_frame"
+								}
+							}
+						}
+						tconstruct: {
+							0: {
+								Count: 1b
+								id: "tconstruct:materials_and_you"
+							}
+						}
+					}
+					"eccentrictome:version": 1
+				}
+			}
+			id: "32CA69C5AF2D65AA"
+			rewards: [{
+				id: "407CE8F83560743E"
+				item: {
+					Count: 1
+					id: "eccentrictome:tome"
+					tag: {
+						Enchantments: [ ]
+						"eccentrictome:mods": {
+							actuallyadditions: {
+								0: {
+									Count: 1b
+									id: "actuallyadditions:booklet"
+								}
+							}
+							ae2: {
+								0: {
+									Count: 1b
+									id: "ae2:guide"
+									tag: {
+										Enchantments: [ ]
+									}
+								}
+							}
+							botania: {
+								0: {
+									Count: 1b
+									id: "botania:lexicon"
+								}
+							}
+							eidolon: {
+								0: {
+									Count: 1b
+									id: "eidolon:codex"
+									tag: {
+										Enchantments: [ ]
+									}
+								}
+							}
+							ftbquests: {
+								0: {
+									Count: 1b
+									id: "ftbquests:book"
+									tag: {
+										Enchantments: [ ]
+									}
+								}
+							}
+							immersiveengineering: {
+								0: {
+									Count: 1b
+									id: "immersiveengineering:manual"
+								}
+							}
+							patchouli: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "patchouli:summoning"
+									}
+								}
+								1: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										Enchantments: [ ]
+										"patchouli:book": "patchouli:reality_frame"
+									}
+								}
+							}
+							tconstruct: {
+								0: {
+									Count: 1b
+									id: "tconstruct:materials_and_you"
+								}
+							}
+						}
+						"eccentrictome:version": 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FCD69F562A86552"
+				title: "{quest.1.knowledge.check}"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["307781E736AB9A56"]
+			description: [
+				"{quest.1.chalk.desc0}"
+				""
+				"{quest.1.chalk.desc1}"
+				""
+				"{quest.1.chalk.desc2}"
+			]
+			icon: {
+				Count: 1
+				id: "chalk:white_chalk"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45184889D2E53FD7"
+			rewards: [
+				{
+					id: "672903D703E7F630"
+					item: {
+						Count: 1
+						id: "chalk:chalk_box"
+						tag: {
+							Items: [
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+								{
+									Count: 1b
+									id: "minecraft:air"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C2242D1481A6833"
+					item: {
+						Count: 1
+						id: "chalk:white_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BFC470C354E39D6"
+					item: {
+						Count: 1
+						id: "chalk:yellow_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3324BF857CE03536"
+					item: {
+						Count: 1
+						id: "chalk:red_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1009688A1B1A308B"
+					item: {
+						Count: 1
+						id: "chalk:black_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1DB11CD33CFD4CF5"
+				item: {
+					Count: 1
+					id: "chalk:white_chalk"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{quest.1.chalk.title}"
+			x: 2.5d
+			y: 19.0d
+		}
 	]
-	title: "Chapter 1"
+	title: "{quest.chapter_1.title}"
 }

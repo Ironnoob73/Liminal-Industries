@@ -11,9 +11,9 @@
 		{
 			dependencies: ["541234B688B98E86"]
 			description: [
-				"Ashes can be obtained by lighting anything that can catch fire. After the block burns up, it will make ash that can be picked up using a shovel."
+				"{quest.2.ashes.desc0}"
 				""
-				"What to burn is entirely up to you. Wood is not super easy to come by in big quantities and the carpet and wallpaper are somehow resistent to the flames. But perhaps you can find something made out of cardboard..."
+				"{quest.2.ashes.desc1}"
 			]
 			icon: "supplementaries:ash"
 			id: "22FF287969C58B70"
@@ -24,7 +24,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "Dust to Dust"
+			subtitle: "{quest.2.ashes.subtitle}"
 			tasks: [
 				{
 					id: "4560621272125845"
@@ -41,7 +41,7 @@
 					id: "09BE5840BA51E445"
 					item: {
 						Count: 1
-						id: "minecraft:wooden_shovel"
+						id: "minecraft:stone_shovel"
 						tag: {
 							Damage: 0
 						}
@@ -55,7 +55,7 @@
 					type: "item"
 				}
 			]
-			title: "Ashes to Ashes"
+			title: "{quest.2.ashes.title}"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -70,7 +70,7 @@
 				item: "create:wrench"
 				type: "item"
 			}]
-			subtitle: "Be reborn from the ashes"
+			subtitle: "{quest.2.ash_alloy.subtitle}"
 			tasks: [{
 				id: "08A7B6A04AE342A6"
 				item: "create:andesite_alloy"
@@ -97,7 +97,7 @@
 					type: "item"
 				}
 			]
-			title: "Become Dust"
+			title: "{quest.2.crushing_wheel.title}"
 			x: 0.0d
 			y: 7.5d
 		}
@@ -105,6 +105,22 @@
 			dependencies: [
 				"1BFE1926B47FD92D"
 				"06DADC2BB0854FB1"
+			]
+			description: [
+				"{quest.2.steam_age.desc0}"
+				""
+				"{quest.2.steam_age.desc1}"
+				""
+				"{quest.2.steam_age.desc2}"
+				""
+				"{quest.2.steam_age.desc3}"
+				""
+				"{quest.2.steam_age.desc4}"
+				""
+				"{quest.2.steam_age.desc5}"
+				""
+				""
+				"{image:kubejs:textures/quests/steam_engine.png width:200 height:100 align:center}"
 			]
 			icon: "create:steam_engine"
 			id: "594A42AEFA0A83BA"
@@ -122,6 +138,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "{quest.2.steam_age.subtitle}"
 			tasks: [
 				{
 					id: "0D13D3BFC3429D9F"
@@ -135,9 +152,8 @@
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "73D70B8AE2F77131"
-					item: { Count: 2, id: "createlowheated:basic_burner" }
+					item: "createlowheated:basic_burner"
 					type: "item"
 				}
 				{
@@ -157,7 +173,7 @@
 					type: "item"
 				}
 			]
-			title: "Entering the Steam Age"
+			title: "{quest.2.steam_age.title}"
 			x: 0.0d
 			y: 5.0d
 		}
@@ -182,7 +198,7 @@
 					type: "item"
 				}
 			]
-			title: "Getting Copper"
+			title: "{quest.2.copper.title}"
 			x: -5.0d
 			y: 5.0d
 		}
@@ -226,7 +242,7 @@
 				item: "createlowheated:basic_burner"
 				type: "item"
 			}]
-			title: "Burner without Blaze"
+			title: "{quest.2.burner.title}"
 			x: -5.0d
 			y: 1.0d
 		}
@@ -241,10 +257,9 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Endless Charcoal"
+			subtitle: "{quest.2.coke_oven.subtitle}"
 			tasks: [
 				{
-					count: 27L
 					id: "5542F176D47F2C41"
 					item: "immersiveengineering:cokebrick"
 					type: "item"
@@ -262,36 +277,34 @@
 					type: "item"
 				}
 			]
-			title: "Big Furnace"
+			title: "{quest.2.coke_oven.title}"
 			x: 0.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["5782203B2280911B"]
 			description: [
-				"A lot of furniture can be turned into Blocks of Charcoal."
+				"{quest.2.better_fuel.desc0}"
 				""
-				"That should be a good source of fuel for the upcoming steamage."
+				"{quest.2.better_fuel.desc1}"
 			]
 			icon: "thermal:charcoal_block"
 			id: "2301997FBD95F04C"
-			tasks: [
-				{
-					id: "64078733AF88BB17"
-					item: "refurbished_furniture:oak_chair"
-					type: "item"
-				}
-				{
-					id: "72317B15FCD063EC"
-					item: "thermal:charcoal_block"
-					type: "item"
-				}
-			]
-			title: "Making Better Fuel"
+			tasks: [{
+				id: "72317B15FCD063EC"
+				item: "thermal:charcoal_block"
+				type: "item"
+			}]
+			title: "{quest.2.better_fuel.title}"
 			x: 0.0d
 			y: 3.0d
 		}
 		{
+			description: [
+				"{quest.2.nether.desc0}"
+				""
+				"{quest.2.nether.desc1}"
+			]
 			id: "021C50BEE88E0B07"
 			rewards: [{
 				id: "36AFB541A92C8E45"
@@ -299,14 +312,14 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "Expected Something Else?"
+			subtitle: "{quest.2.nether.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "29B5E3BFD5FBF7D5"
-				title: "Visit the Nether"
+				title: "{quest.2.nether.check}"
 				type: "dimension"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: 5.0d
 		}
 		{
@@ -314,7 +327,7 @@
 			icon: "supplementaries:checker_block"
 			id: "780450B76916CDB7"
 			shape: "square"
-			subtitle: "Time for Chess"
+			subtitle: "{quest.2.checker_block.subtitle}"
 			tasks: [
 				{
 					id: "2936C3ED16FB1828"
@@ -332,7 +345,7 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
+			x: 9.5d
 			y: 7.5d
 		}
 		{
@@ -347,41 +360,18 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 11.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["203FC15B09EAA27F"]
 			id: "541234B688B98E86"
-			rewards: [
-				{
-					id: "74A7696D12C549D3"
-					item: "supplementaries:confetti_popper"
-					type: "item"
-				}
-				{
-					id: "1973D6AD587BBEAD"
-					item: "kubejs:party_popper"
-					type: "item"
-				}
-				{
-					id: "6B1A7EB040282B4B"
-					item: "minecraft:jukebox"
-					type: "item"
-				}
-				{
-					id: "490E316D0D102225"
-					item: "minecraft:music_disc_relic"
-					type: "item"
-				}
-			]
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
-				count: 5L
 				id: "55DF6C1569B150BA"
-				item: { Count: 5, id: "minecraft:cobblestone" }
+				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			title: "Cobblestone Generator"
+			title: "{quest.2.cobblestone.title}"
 			x: 0.0d
 			y: -8.0d
 		}
@@ -390,7 +380,7 @@
 				"5A988566BC220234"
 				"1A5679134A610FF2"
 			]
-			description: ["Metal furniture can be melted to gain all kinds of metals."]
+			description: ["{quest.2.smeltery.desc0}"]
 			icon: "tconstruct:smeltery_controller"
 			id: "60DCFFC671BBD126"
 			rewards: [
@@ -434,7 +424,7 @@
 			]
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Metallurgy"
+			subtitle: "{quest.2.smeltery.subtitle}"
 			tasks: [
 				{
 					id: "18D0C2E2D411293A"
@@ -462,9 +452,9 @@
 					type: "item"
 				}
 			]
-			title: "Building a Smeltery"
+			title: "{quest.2.smeltery.title}"
 			x: 0.0d
-			y: 15.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["541234B688B98E86"]
@@ -477,7 +467,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Time to bring some more life to this place"
+			subtitle: "{quest.2.apothecary.subtitle}"
 			tasks: [{
 				id: "0E093878C6AA093A"
 				item: "botania:apothecary_default"
@@ -502,6 +492,7 @@
 				"5782203B2280911B"
 				"2B462CBD198F53F7"
 			]
+			description: ["{quest.2.livingwood.desc0}"]
 			icon: "botania:livingwood"
 			id: "4EFCB9F8F9EDC5EB"
 			tasks: [{
@@ -510,7 +501,7 @@
 				item: "botania:livingwood"
 				type: "item"
 			}]
-			title: "Reviving wood"
+			title: "{quest.2.livingwood.title}"
 			x: 5.0d
 			y: 5.0d
 		}
@@ -550,7 +541,11 @@
 				"1773F3D3ECBC4923"
 				"22FF287969C58B70"
 			]
-			description: ["Soggy carpet can be used in combination with Floral Fertiliser to bring some colour to this monochrome place."]
+			description: [
+				"{quest.2.fertilizer.desc0}"
+				""
+				"{quest.2.fertilizer.desc1}"
+			]
 			icon: "botania:fertilizer"
 			id: "495E194ACEFD9CD7"
 			rewards: [
@@ -566,7 +561,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Taste the Rainbow"
+			subtitle: "{quest.2.fertilizer.subtitle}"
 			tasks: [
 				{
 					id: "6C87F9E5B39111AD"
@@ -590,16 +585,18 @@
 					type: "item"
 				}
 			]
-			title: "Floral Fertilizer"
+			title: "{quest.2.fertilizer.title}"
 			x: 5.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["1773F3D3ECBC4923"]
+			dependencies: ["1A5679134A610FF2"]
 			description: [
-				"Sugarcane grows ways faster on snad. "
+				"{quest.2.sugar_cane.desc0}"
 				""
-				"Can this be exploited?, you be the judge."
+				"{quest.2.sugar_cane.desc1}"
+				""
+				"{quest.2.sugar_cane.desc2}"
 			]
 			icon: "minecraft:sugar_cane"
 			id: "2A93ADA6EAA0C7EB"
@@ -616,13 +613,18 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.0d
+			x: -2.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
 				"1BFE1926B47FD92D"
-				"1A5679134A610FF2"
+				"2A93ADA6EAA0C7EB"
+			]
+			description: [
+				"{quest.2.liminal_jam.desc0}"
+				""
+				"{quest.2.liminal_jam.desc1}"
 			]
 			icon: "brewinandchewin:sweet_berry_jam"
 			id: "347FB9BA17B5C66C"
@@ -646,7 +648,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Smooth with Limited Taste"
+			subtitle: "{quest.2.liminal_jam.subtitle}"
 			tasks: [
 				{
 					id: "225D62380594BB5A"
@@ -675,24 +677,24 @@
 					type: "item"
 				}
 			]
-			title: "Liminal Jam"
+			title: "{quest.2.liminal_jam.title}"
 			x: -5.0d
-			y: 11.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["021C50BEE88E0B07"]
 			description: [
-				"Somewhere within the infinite library sits a forgotten eye. "
-				"Staring at endless books."
+				"{quest.2.lost_eye.desc0}"
+				"{quest.2.lost_eye.desc1}"
 				""
-				"Search on top of the giant piles of books and other lost junk."
+				"{quest.2.lost_eye.desc2}"
 				""
 				""
 				"{image:kubejs:textures/quests/lost_eye.png width:200 height:100 align:center}"
 			]
 			id: "12F6EDB7B3074DBA"
 			shape: "hexagon"
-			subtitle: "Hidden within an Infinite Library"
+			subtitle: "{quest.2.lost_eye.subtitle}"
 			tasks: [{
 				id: "0E50ED4115F134D3"
 				item: {
@@ -710,10 +712,10 @@
 		{
 			dependencies: ["4EFCB9F8F9EDC5EB"]
 			description: [
-				"You can turn Livingwood into Charcoal using the coke oven."
-				"After that, Charcoal can be turned into Coal Coke."
+				"{quest.2.renewable_coal.desc0}"
+				"{quest.2.renewable_coal.desc1}"
 				""
-				"Which means that every plank can, in theory, be turned into Coal Coke with the right setup."
+				"{quest.2.renewable_coal.desc2}"
 			]
 			icon: "immersiveengineering:coal_coke"
 			id: "2138ADDDF2575A11"
@@ -722,10 +724,10 @@
 				title: "Completed"
 				type: "checkmark"
 			}]
-			title: "Renewable Coal Coke"
+			title: "{quest.2.renewable_coal.title}"
 			x: 2.5d
 			y: 7.5d
 		}
 	]
-	title: "Chapter 2"
+	title: "{quest.chapter_2.title}"
 }

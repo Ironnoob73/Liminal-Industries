@@ -26,7 +26,7 @@
 			description: [
 				"In order to get back to the overworld, all 12 eyes must be collected and placed in the portal frame. "
 				""
-				"Only a single room is generated with a portal frame. If you have not yet found it, it only has one entrance facing east. So it might be best to travel west to have the best chance of finding it."
+				"Only a single room is generated with a portal frame. The room has 4 entrances and an ominous heartbeat echoing from within."
 				""
 				"If you are ever confused, look back in the questbook on how to obtain the different eyes."
 			]
@@ -34,13 +34,13 @@
 			id: "54C2818EE0D113D9"
 			shape: "hexagon"
 			size: 5.0d
-			subtitle: "Opening the Portal"
+			subtitle: "{quest.esc.portal.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_end"
 				id: "461BF68B1EB33759"
 				type: "dimension"
 			}]
-			title: "Portal to the Overworld"
+			title: "{quest.esc.portal.title}"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -253,5 +253,5 @@
 			y: -6.0d
 		}
 	]
-	title: "Escaping"
+	title: "{quest.escaping.title}"
 }

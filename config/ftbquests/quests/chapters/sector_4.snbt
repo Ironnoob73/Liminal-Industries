@@ -13,6 +13,11 @@
 				"6425A4B344A3E70F"
 				"16BED30DF56C2600"
 			]
+			description: [
+				"{quest.5.osmium.desc0}"
+				""
+				"{quest.5.osmium.desc1}"
+			]
 			id: "2A8B73B53DE73CC6"
 			tasks: [{
 				id: "4E23BA1760FD6CF1"
@@ -25,22 +30,17 @@
 		{
 			dependencies: ["16BED30DF56C2600"]
 			description: [
-				"Some of the Reality Chips generate ores that are quite valuable. "
+				"{quest.5.miner.desc0}"
 				""
-				"Setting up some automated mining operation might be a good idea."
+				"{quest.5.miner.desc1}"
 			]
 			icon: "minecraft:diamond"
 			id: "441BC926A39965BD"
-			subtitle: "Your Ores are Mine Now"
+			subtitle: "{quest.5.miner.subtitle}"
 			tasks: [
 				{
 					id: "69C59761E498F70E"
 					item: "minecraft:raw_iron"
-					type: "item"
-				}
-				{
-					id: "3F7099F1E848ED49"
-					item: "minecraft:raw_copper"
 					type: "item"
 				}
 				{
@@ -64,7 +64,7 @@
 					type: "item"
 				}
 			]
-			title: "Reality Miner"
+			title: "{quest.5.miner.title}"
 			x: -6.0d
 			y: 20.0d
 		}
@@ -174,7 +174,7 @@
 					type: "item"
 				}
 			]
-			title: "Artificial Intelligence"
+			title: "{quest.5.ai.title}"
 			x: 0.0d
 			y: 52.0d
 		}
@@ -191,6 +191,7 @@
 		}
 		{
 			dependencies: ["16BED30DF56C2600"]
+			description: ["{quest.5.ender_dust.desc0}"]
 			icon: "ae2:ender_dust"
 			id: "6DA0C1A9A1E1AC7B"
 			rewards: [{
@@ -211,7 +212,7 @@
 					type: "item"
 				}
 			]
-			title: "Stone to Dust"
+			title: "{quest.5.ender_dust.title}"
 			x: 0.0d
 			y: 20.0d
 		}
@@ -275,6 +276,11 @@
 		}
 		{
 			dependencies: ["3BDAAFC3E00E1C72"]
+			description: [
+				"{quest.5.froglights.desc0}"
+				""
+				"{quest.5.froglights.desc1}"
+			]
 			icon: "minecraft:ochre_froglight"
 			id: "34D7245BC72FBAD5"
 			rewards: [
@@ -345,12 +351,13 @@
 					type: "item"
 				}
 			]
-			title: "Froglights"
+			title: "{quest.5.froglights.title}"
 			x: 8.0d
 			y: 57.5d
 		}
 		{
 			dependencies: ["08AA2EDF465DE029"]
+			description: ["{quest.5.frog.desc0}"]
 			icon: "minecraft:frogspawn"
 			id: "3BDAAFC3E00E1C72"
 			tasks: [
@@ -371,7 +378,7 @@
 					type: "item"
 				}
 			]
-			title: "Frogspawn"
+			title: "{quest.5.frog.title}"
 			x: 8.0d
 			y: 47.0d
 		}
@@ -438,18 +445,44 @@
 		}
 		{
 			dependencies: ["5EE912358F2227BA"]
+			description: [
+				"{quest.5.moderate_summoning.desc0}"
+				""
+				"{quest.5.moderate_summoning.desc1}"
+			]
+			icon: "kubejs:moderate_soul_gem"
 			id: "08AA2EDF465DE029"
-			tasks: [{
-				id: "7A6A8FCEE4A00064"
+			rewards: [{
+				count: 2
+				id: "7971960BAF8D9C94"
 				item: "kubejs:moderate_soul_gem"
 				type: "item"
 			}]
-			title: "Moderate Summoning"
+			subtitle: "{quest.5.moderate_summoning.subtitle}"
+			tasks: [
+				{
+					id: "13641B3DF8F4318F"
+					item: "eidolon:necrotic_focus"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "20B52DBF82A26666"
+					item: "kubejs:moderate_soul_gem"
+					type: "item"
+				}
+			]
+			title: "{quest.5.moderate_summoning.title}"
 			x: 0.0d
 			y: 42.5d
 		}
 		{
 			dependencies: ["08AA2EDF465DE029"]
+			description: [
+				"{quest.5.wither.desc0}"
+				""
+				"{quest.5.wither.desc1}"
+			]
 			icon: {
 				Count: 1
 				id: "endrem:wither_eye"
@@ -489,7 +522,7 @@
 					type: "item"
 				}
 			]
-			title: "Tripple Skulls"
+			title: "{quest.5.wither.title}"
 			x: -8.0d
 			y: 47.0d
 		}
@@ -514,19 +547,6 @@
 			dependencies: ["6425A4B344A3E70F"]
 			icon: "kubejs:reality_controller_running"
 			id: "16BED30DF56C2600"
-			rewards: [
-				{
-					count: 3
-					id: "0CDAB4E41CA24CF9"
-					item: "kubejs:party_popper"
-					type: "item"
-				}
-				{
-					id: "2BC7B82C0195BB7D"
-					item: "botania:record_gaia_1"
-					type: "item"
-				}
-			]
 			shape: "gear"
 			size: 3.0d
 			tasks: [{
@@ -576,9 +596,9 @@
 		{
 			dependencies: ["2C65A876EF00F270"]
 			description: [
-				"The Cryptic Eye can be created by right-clicking a lot of enchanted books on a block of experience."
+				"{quest.5.cryptic_eye.desc0}"
 				""
-				"The fact that it slowly gains more sentience over time does not really seem to bother you..."
+				"{quest.5.cryptic_eye.desc1}"
 			]
 			icon: {
 				Count: 1
@@ -590,7 +610,7 @@
 			id: "7C74C4D1572E5A39"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Absorbing Knowlege"
+			subtitle: "{quest.5.cryptic_eye.subtitle}"
 			tasks: [
 				{
 					id: "514A7F9CB6DB9A7D"
@@ -615,12 +635,15 @@
 					type: "item"
 				}
 			]
-			title: "Cryptic Eye"
+			title: "{quest.5.cryptic_eye.title}"
 			x: 0.0d
 			y: 93.0d
 		}
 		{
-			dependencies: ["020D04D0081B0376"]
+			dependencies: [
+				"020D04D0081B0376"
+				"71B9B26E6BA141F3"
+			]
 			id: "245653B3451C76FA"
 			shape: "hexagon"
 			tasks: [{
@@ -635,7 +658,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 73.0d
+			y: 73.5d
 		}
 		{
 			dependencies: ["20BB0A14D35143A3"]
@@ -683,12 +706,13 @@
 					type: "item"
 				}
 			]
-			title: "Divided by Zero"
+			title: "{quest.5.error.title}"
 			x: 3.0d
 			y: 20.0d
 		}
 		{
 			dependencies: ["16BED30DF56C2600"]
+			description: ["{quest.5.blaze_cake.desc0}"]
 			icon: "create:blaze_cake"
 			id: "7321D8BB155B472C"
 			rewards: [{
@@ -713,7 +737,7 @@
 					type: "item"
 				}
 			]
-			title: "Why is it Spicy???"
+			title: "{quest.5.blaze_cake.title}"
 			x: 6.0d
 			y: 20.0d
 		}
@@ -770,13 +794,13 @@
 				}
 				type: "item"
 			}]
-			title: "For All Time. Always."
+			title: "{quest.5.tempad.title}"
 			x: -6.0d
 			y: 66.5d
 		}
 		{
 			dependencies: ["7321D8BB155B472C"]
-			description: ["When a Shadowgem Block is right-clicked with Chromatic Compound, it will turn into Shadow Steel."]
+			description: ["{quest.5.dark.desc0}"]
 			icon: "create:shadow_steel"
 			id: "26F8FABDCAB3E581"
 			rewards: [{
@@ -785,7 +809,7 @@
 				item: "minecraft:experience_bottle"
 				type: "item"
 			}]
-			subtitle: "Powers Beyond your Comprehension"
+			subtitle: "{quest.5.dark.subtitle}"
 			tasks: [
 				{
 					id: "77CAA64BAE3A37EA"
@@ -812,7 +836,7 @@
 					type: "item"
 				}
 			]
-			title: "Dark Magic"
+			title: "{quest.5.dark.title}"
 			x: 6.0d
 			y: 23.5d
 		}
@@ -857,16 +881,16 @@
 					type: "item"
 				}
 			]
-			title: "String Theory"
+			title: "{quest.5.string.title}"
 			x: 0.0d
 			y: 88.0d
 		}
 		{
-			description: ["You can summon Dragon's Breath using the summoning brazier. You need to be quick to pick it up, so have your bottles ready."]
+			description: ["{quest.5.dragon_breath.desc0}"]
 			icon: "minecraft:dragon_breath"
 			id: "285A77D18A6A95CF"
 			shape: "square"
-			subtitle: "Fire comes from the Breath"
+			subtitle: "{quest.5.dragon_breath.subtitle}"
 			tasks: [
 				{
 					count: 9L
@@ -880,7 +904,7 @@
 					type: "item"
 				}
 			]
-			title: "Dragon's Breath"
+			title: "{quest.5.dragon_breath.title}"
 			x: -3.0d
 			y: 88.0d
 		}
@@ -888,7 +912,7 @@
 			dependencies: ["4D4A26DE9CDBAA45"]
 			icon: "ae2:singularity"
 			id: "46BDA25C56FAA3E0"
-			subtitle: "Feed the Singularity"
+			subtitle: "{quest.5.singularity.subtitle}"
 			tasks: [
 				{
 					id: "415ACB92B1624F57"
@@ -936,19 +960,19 @@
 		{
 			dependencies: ["1C652ACF84E2883C"]
 			description: [
-				"The reality Frame can be used to warp in a black hole."
+				"{quest.5.antimatter.desc0}"
 				""
-				"The process is the same as normal. However, the modified data chip should be used instead of a normal one to start the warping."
+				"{quest.5.antimatter.desc1}"
 				""
-				"When the back hole has formed you can right-click it with a singularity."
-				"The singularity will be consumed and the back hole will spit out pieces of antimatter in return."
+				"{quest.5.antimatter.desc2}"
+				"{quest.5.antimatter.desc3}"
 				""
-				"The Reality Frame information book can be consulted for more information."
+				"{quest.5.antimatter.desc4}"
 			]
 			icon: "kubejs:data_chip_infinity"
 			id: "6474DAB2246BD65F"
 			size: 2.0d
-			subtitle: "Warping in a Black Hole"
+			subtitle: "{quest.5.antimatter.subtitle}"
 			tasks: [
 				{
 					id: "2E8EB1BC8F68618F"
@@ -976,7 +1000,7 @@
 					type: "item"
 				}
 			]
-			title: "Inside these Equations there are Monsters"
+			title: "{quest.5.antimatter.title}"
 			x: 0.0d
 			y: 79.0d
 		}
@@ -998,6 +1022,30 @@
 			x: -4.0d
 			y: 47.0d
 		}
+		{
+			icon: "minecraft:beehive"
+			id: "71B9B26E6BA141F3"
+			rewards: [{
+				count: 3
+				id: "7848A53424C8FE3D"
+				item: "minecraft:honey_bottle"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7B480A6A299153B2"
+					item: "minecraft:beehive"
+					type: "item"
+				}
+				{
+					id: "1FA8EA43AC45B072"
+					item: "minecraft:honeycomb"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 71.0d
+		}
 	]
-	title: "Chapter 5"
+	title: "{quest.chapter_5.title}"
 }

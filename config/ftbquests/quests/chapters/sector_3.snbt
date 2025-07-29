@@ -17,7 +17,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 24.5d
+			y: 28.5d
 		}
 		{
 			dependencies: ["796F86181DD720D0"]
@@ -28,12 +28,17 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 24.5d
+			y: 28.5d
 		}
 		{
 			dependencies: [
 				"78F13758BBD911A0"
 				"73CAD8D4E107FD6A"
+			]
+			description: [
+				"{quest.4.refinery.desc0}"
+				""
+				"{quest.4.refinery.desc1}"
 			]
 			icon: "immersiveengineering:refinery"
 			id: "7F91B09DB4328848"
@@ -81,14 +86,19 @@
 					type: "item"
 				}
 			]
-			title: "Refinery"
+			title: "{quest.4.refinery.title}"
 			x: -4.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
 				"78F13758BBD911A0"
 				"5FD115F71D4F8E01"
+			]
+			description: [
+				"{quest.4.machine_frame.desc0}"
+				""
+				"{quest.4.machine_frame.desc1}"
 			]
 			id: "246A2048B0070B20"
 			rewards: [{
@@ -109,9 +119,9 @@
 					type: "item"
 				}
 			]
-			title: "Making a Machine Frame"
+			title: "{quest.4.machine_frame.title}"
 			x: 0.0d
-			y: 16.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["246A2048B0070B20"]
@@ -123,10 +133,18 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 20.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["246A2048B0070B20"]
+			description: [
+				"{quest.4.smelter.desc0}"
+				""
+				"{quest.4.smelter.desc1}"
+				""
+				"{quest.4.smelter.desc2}"
+				"{quest.4.smelter.desc3}"
+			]
 			id: "796F86181DD720D0"
 			shape: "gear"
 			tasks: [{
@@ -135,14 +153,14 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 20.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["64C1F773CA05847E"]
 			description: [
-				"With this setup you can make renewable copper."
+				"{quest.4.copper.desc0}"
 				""
-				"It might be recommended to make a train network through the nether and then back into the backrooms to pick up the Veridium."
+				"{quest.4.copper.desc1}"
 			]
 			icon: "create:veridium"
 			id: "53563EF68FA374A9"
@@ -170,26 +188,32 @@
 					type: "item"
 				}
 			]
-			title: "Renewable Copper"
+			title: "{quest.4.copper.title}"
 			x: -1.0d
-			y: 6.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
 				"7F91B09DB4328848"
 				"6DB9FC4B11904EE5"
 			]
+			description: ["{quest.4.fibreboard.desc0}"]
 			id: "12CC2DCC3B227D34"
+			subtitle: "{quest.4.fibreboard.subtitle}"
 			tasks: [{
 				id: "683532B4F11E3AEE"
 				item: "immersiveengineering:fiberboard"
 				type: "item"
 			}]
 			x: -4.0d
-			y: 7.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["4969351B16EAD7FF"]
+			description: [
+				"{quest.4.reconstructor.desc0}"
+				"{quest.4.reconstructor.desc1}"
+			]
 			id: "5FD115F71D4F8E01"
 			rewards: [{
 				id: "483C8A8F0B790AF2"
@@ -203,28 +227,12 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.5d
+			y: 16.5d
 		}
 		{
+			dependencies: ["78F13758BBD911A0"]
 			id: "73CAD8D4E107FD6A"
-			rewards: [
-				{
-					id: "75663A7D8ECF84CB"
-					item: "kubejs:party_popper"
-					type: "item"
-				}
-				{
-					id: "29667C48B112E501"
-					item: "berry_good:music_disc_fox"
-					type: "item"
-				}
-				{
-					id: "596F5E488C943F1A"
-					item: "supplementaries:confetti_popper"
-					type: "item"
-				}
-			]
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
 				id: "7338F79D61FFF9E2"
 				item: "immersiveengineering:heavy_engineering"
@@ -255,12 +263,15 @@
 					type: "item"
 				}
 			]
-			title: "Liminal Transport"
+			title: "{quest.4.track.title}"
 			x: -4.0d
-			y: 11.0d
+			y: 15.5d
 		}
 		{
-			dependencies: ["1BB79E9A49046DE9"]
+			dependencies: [
+				"1BB79E9A49046DE9"
+				"45A3201920266E62"
+			]
 			id: "7D9AAE5AF42E626B"
 			tasks: [{
 				id: "2F7CE8923AB85116"
@@ -268,13 +279,14 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 7.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
 				"7D9AAE5AF42E626B"
 				"12CC2DCC3B227D34"
 			]
+			description: ["{quest.4.brass_age.desc0}"]
 			icon: "create:railway_casing"
 			id: "4969351B16EAD7FF"
 			tasks: [
@@ -294,16 +306,16 @@
 					type: "item"
 				}
 			]
-			title: "Brass Age"
+			title: "{quest.4.brass_age.title}"
 			x: 0.0d
-			y: 9.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["73CAD8D4E107FD6A"]
-			description: ["With Heavy Engineering Blocks you can now summon blazes using the brazier."]
+			description: ["{quest.4.burner.desc0}"]
 			id: "1BB79E9A49046DE9"
 			shape: "gear"
-			subtitle: "Sentient Fireplace"
+			subtitle: "{quest.4.burner.subtitle}"
 			tasks: [
 				{
 					id: "6DAC32C731056545"
@@ -317,7 +329,7 @@
 				}
 			]
 			x: 4.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -340,7 +352,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 28.0d
+			y: 32.0d
 		}
 		{
 			dependencies: ["572AD4DE946B6915"]
@@ -352,7 +364,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 32.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["63DEC531E6BDC084"]
@@ -362,9 +374,9 @@
 				item: "minecraft:oak_sapling"
 				type: "item"
 			}]
-			title: "A Tree Under Fluorescent Tubes "
+			title: "{quest.4.tree.title}"
 			x: -8.5d
-			y: 36.0d
+			y: 40.0d
 		}
 		{
 			dependencies: ["572AD4DE946B6915"]
@@ -375,11 +387,12 @@
 				item: "thermal:machine_centrifuge"
 				type: "item"
 			}]
-			title: "Centrifugal Separator"
+			title: "{quest.4.centrifuge.title}"
 			x: -4.0d
-			y: 32.0d
+			y: 36.0d
 		}
 		{
+			description: ["{quest.4.ae_press.desc0}"]
 			id: "5E7D73247DA737FF"
 			shape: "square"
 			tasks: [
@@ -404,9 +417,9 @@
 					type: "item"
 				}
 			]
-			title: "Searching for Ancient Tech"
+			title: "{quest.4.ae_press.title}"
 			x: -2.0d
-			y: 36.0d
+			y: 40.0d
 		}
 		{
 			dependencies: ["572AD4DE946B6915"]
@@ -418,7 +431,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 32.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["760F4441BDBA7F53"]
@@ -491,8 +504,9 @@
 					type: "item"
 				}
 			]
+			title: "{quest.4.arc_furnace.title}"
 			x: 4.0d
-			y: 40.0d
+			y: 44.0d
 		}
 		{
 			dependencies: [
@@ -503,15 +517,28 @@
 				"222698B69FA5906C"
 			]
 			description: [
-				"Using the Reality Frame, you can abduct terrain from the overworld based on the seed that is written on the chip."
+				"{quest.4.abducting.desc0}"
 				""
-				"This is essential for your escape since the terrain contains ores like Osmium that you need to craft the last eyes."
+				"{quest.4.abducting.desc1}"
 			]
 			icon: "kubejs:reality_controller_running"
 			id: "6425A4B344A3E70F"
+			rewards: [
+				{
+					count: 3
+					id: "0C2A27AAA21DDDC1"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "5DBE9819BDA91586"
+					item: "botania:record_gaia_1"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 3.0d
-			subtitle: "Abducting the Overworld"
+			subtitle: "{quest.4.abducting.subtitle}"
 			tasks: [
 				{
 					count: 91L
@@ -535,9 +562,9 @@
 					type: "item"
 				}
 			]
-			title: "Abducting Dimensions"
+			title: "{quest.4.abducting.title}"
 			x: 0.0d
-			y: 46.0d
+			y: 50.0d
 		}
 		{
 			dependencies: [
@@ -556,9 +583,9 @@
 				}
 				type: "item"
 			}]
-			title: "Arc Furnace Prep"
+			title: "{quest.4.electrode.title}"
 			x: 4.0d
-			y: 36.0d
+			y: 40.0d
 		}
 		{
 			dependencies: [
@@ -572,7 +599,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 36.0d
+			y: 40.0d
 		}
 		{
 			dependencies: ["6F3B77AB45A5D8CF"]
@@ -598,7 +625,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 40.0d
+			y: 44.0d
 		}
 		{
 			dependencies: ["572AD4DE946B6915"]
@@ -637,10 +664,15 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 32.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["2514C72B5F5115B8"]
+			description: [
+				"{quest.4.reality_charge.desc0}"
+				""
+				"{quest.4.reality_charge.desc1}"
+			]
 			id: "37FD897CA97FD28D"
 			tasks: [
 				{
@@ -655,7 +687,7 @@
 				}
 			]
 			x: -4.0d
-			y: 40.0d
+			y: 44.0d
 		}
 		{
 			dependencies: ["572AD4DE946B6915"]
@@ -663,52 +695,52 @@
 			shape: "gear"
 			tasks: [{
 				id: "088E3F28A15B75D8"
-				item: "thermal:machine_crucible"
+				item: "thermal:machine_bottler"
 				type: "item"
 			}]
 			x: 8.0d
-			y: 32.0d
+			y: 36.0d
 		}
 		{
 			dependencies: ["1BB79E9A49046DE9"]
 			description: [
-				"&oAlchemy: the science of understanding, deconstructing, and reconstructing matter. However, it is not an all-powerful art. "
+				"{quest.4.catalyst.desc0}"
 				""
-				"&oIt is impossible to create something out of nothing. If one wishes to obtain something, something of equal value must be given. "
+				"{quest.4.catalyst.desc1}"
 				""
-				"&oThis is the law of equivalent exchange; the basis of all alchemy. In accordance to this law, there is a taboo among alchemists. Human transmutation is strictly forbidden. "
+				"{quest.4.catalyst.desc2}"
 				""
-				"&oFor what could equal the value of a human soul?"
+				"{quest.4.catalyst.desc3}"
 			]
 			id: "64C1F773CA05847E"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Equivalent Exchange"
+			subtitle: "{quest.4.catalyst.subtitle}"
 			tasks: [{
 				id: "677058EB09DF6453"
 				item: "botania:alchemy_catalyst"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5BA5847E7ACD473A"]
 			description: [
-				"Using the Arc Furnace you can make steel without the risk of cracking it."
+				"{quest.4.steel.desc0}"
 				""
-				"Finally..."
+				"{quest.4.steel.desc1}"
 			]
 			id: "25E2BB234A952061"
-			subtitle: "Without Cracks"
+			subtitle: "{quest.4.steel.subtitle}"
 			tasks: [{
 				id: "78EA0819611C2CEC"
 				item: "immersiveengineering:ingot_steel"
 				type: "item"
 			}]
-			title: "Reliable Steel"
+			title: "{quest.4.steel.title}"
 			x: 6.0d
-			y: 40.0d
+			y: 44.0d
 		}
 		{
 			dependencies: [
@@ -716,10 +748,10 @@
 				"7DB91F364892F863"
 			]
 			description: [
-				"Oil can be tapped out of Crude Oil Soaked Carpet endlessly by right-clicking it with a drill."
-				"Uppon right-clicking Crude Oil will erupt from the carpet, ready to be picked up."
+				"{quest.4.oil.desc0}"
+				"{quest.4.oil.desc1}"
 				""
-				"It is recommended that you automate this process."
+				"{quest.4.oil.desc2}"
 				""
 				""
 				"{image:kubejs:textures/quests/oil_carpet.png width:192 height:102 align:center}"
@@ -732,26 +764,32 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "Black Gold"
+			subtitle: "{quest.4.oil.subtitle}"
 			tasks: [
 				{
-					id: "1BD5B43CA8E86806"
+					id: "771A90A2218D4A0A"
+					item: "minecraft:sponge"
+					type: "item"
+				}
+				{
+					id: "38006D03C271FDD8"
 					item: "thermal:crude_oil_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "6386E2DDD54C3811"
+					id: "2395FB904349D0C4"
 					item: "thermal:tar"
 					type: "item"
 				}
 			]
-			title: "Carpet Oil"
+			title: "{quest.4.oil.title}"
 			x: -4.0d
-			y: 24.5d
+			y: 28.5d
 		}
 		{
 			dependencies: ["246A2048B0070B20"]
+			description: ["{quest.4.empowerer.desc0}"]
 			id: "7BC25405C23D7BDF"
 			rewards: [
 				{
@@ -767,6 +805,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "{quest.4.empowerer.subtitle}"
 			tasks: [
 				{
 					id: "2D43D4DB34E60CB0"
@@ -781,9 +820,10 @@
 				}
 			]
 			x: 0.0d
-			y: 22.0d
+			y: 26.0d
 		}
 		{
+			description: ["{quest.4.terra_plate.desc0}"]
 			id: "2DB91AF3467FDD67"
 			shape: "gear"
 			tasks: [{
@@ -792,10 +832,15 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 40.0d
+			y: 44.0d
 		}
 		{
 			dependencies: ["246A2048B0070B20"]
+			description: [
+				"{quest.4.thermal_refinery.desc0}"
+				""
+				"{quest.4.thermal_refinery.desc1}"
+			]
 			id: "6762380EB7B4FB9A"
 			shape: "gear"
 			tasks: [{
@@ -804,10 +849,15 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 20.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["246A2048B0070B20"]
+			description: [
+				"{quest.4.pyrolyzer.desc0}"
+				""
+				"{quest.4.pyrolyzer.desc1}"
+			]
 			id: "7DB91F364892F863"
 			shape: "gear"
 			tasks: [{
@@ -816,14 +866,14 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 20.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["64C1F773CA05847E"]
 			description: [
-				"With this setup you can make renewable iron."
+				"{quest.4.iron.desc0}"
 				""
-				"It might be recommended to make a train network through the nether to pick up the Crimsite."
+				"{quest.4.iron.desc1}"
 			]
 			icon: "create:crimsite"
 			id: "0FFB86B741255547"
@@ -846,10 +896,15 @@
 					item: { Count: 3, id: "create:crushed_raw_iron" }
 					type: "item"
 				}
+				{
+					id: "109BC18BBA5F82E5"
+					item: "immersiveengineering:raw_aluminum"
+					type: "item"
+				}
 			]
-			title: "Renewable Iron"
-			x: 1.0d
-			y: 6.5d
+			title: "{quest.4.iron.title}"
+			x: 0.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7DB91F364892F863"]
@@ -884,12 +939,13 @@
 					type: "fluid"
 				}
 			]
-			title: "Echoes in the Void"
+			title: "{quest.4.void.title}"
 			x: -8.5d
-			y: 24.5d
+			y: 28.5d
 		}
 		{
 			can_repeat: true
+			description: ["{quest.4.reality_frame.desc0}"]
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -912,17 +968,19 @@
 			shape: "square"
 			tasks: [{
 				id: "50F32907221514CA"
-				title: "I am qualified now"
+				title: "{quest.4.reality_frame.check}"
 				type: "checkmark"
 			}]
-			title: "Building a Reality Frame"
+			title: "{quest.4.reality_frame.title}"
 			x: 8.0d
-			y: 40.0d
+			y: 44.0d
 		}
 		{
+			description: ["{quest.4.fermenter.desc0}"]
 			icon: "immersiveengineering:fermenter"
 			id: "6DB9FC4B11904EE5"
 			shape: "gear"
+			subtitle: "{quest.4.fermenter.subtitle}"
 			tasks: [
 				{
 					count: 2L
@@ -966,16 +1024,18 @@
 					type: "item"
 				}
 			]
-			title: "Industrial Fermenter"
-			x: -8.5d
-			y: 4.0d
+			title: "{quest.4.fermenter.title}"
+			x: -8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5FD115F71D4F8E01"]
 			description: [
-				"With the Dimensional Stabiliser you can load chunks remotely. "
+				"{quest.4.stabilizer.desc0}"
 				""
-				"This is essential for setting up a mining outpost."
+				"{quest.4.stabilizer.desc1}"
+				""
+				"{quest.4.stabilizer.desc2}"
 			]
 			icon: "mekanism:dimensional_stabilizer"
 			id: "6A05A3E430180A39"
@@ -984,15 +1044,180 @@
 				item: "create:track_station"
 				type: "item"
 			}]
-			subtitle: "Loading what you are not observing"
+			subtitle: "{quest.4.stabilizer.subtitle}"
 			tasks: [{
 				id: "0A20E8A634C43C40"
 				item: "mekanism:dimensional_stabilizer"
 				type: "item"
 			}]
 			x: 4.0d
-			y: 11.0d
+			y: 14.5d
+		}
+		{
+			icon: "kubejs:battery"
+			id: "45A3201920266E62"
+			shape: "square"
+			tasks: [
+				{
+					id: "50A94EEA437E23DE"
+					item: "kubejs:battery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "tconstruct:molten_zinc"
+					id: "6B627AB5A00D00B8"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "5FE0F6140220D6E4"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+			]
+			title: "{quest.4.battery.title}"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["36FA0B2177D6D17C"]
+			icon: {
+				Count: 1
+				id: "endrem:old_eye"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "28DF9CE983663C3C"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "55021825E59E0198"
+					item: {
+						Count: 1
+						id: "tiab:time_in_a_bottle"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4D4702F3ACEBFD49"
+					item: "kubejs:overclocked_clock"
+					type: "item"
+				}
+				{
+					id: "47625808B48C6DBB"
+					item: {
+						Count: 1
+						id: "endrem:old_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{quest.4.old_eye.title}"
+			x: 8.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["73CAD8D4E107FD6A"]
+			description: ["{quest.4.me_drive.desc0}"]
+			id: "3E01F081825DD473"
+			tasks: [{
+				id: "44B44F23F764B849"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2514C72B5F5115B8"]
+			description: [
+				"{quest.4.gold.desc0}"
+				""
+				"{quest.4.gold.desc1}"
+			]
+			icon: "minecraft:gold_ingot"
+			id: "491DE9FB1376D10E"
+			subtitle: "{quest.4.gold.subtitle}"
+			tasks: [{
+				id: "5AF2031ED9FB94D5"
+				title: "{quest.4.gold.check}"
+				type: "checkmark"
+			}]
+			title: "{quest.4.gold.title}"
+			x: -2.0d
+			y: 36.0d
+		}
+		{
+			dependencies: ["5CE78F3B9E2BDC0F"]
+			description: [
+				"{quest.4.refined_oil.desc0}"
+				""
+				"{quest.4.refined_oil.desc1}"
+			]
+			icon: "thermal:refined_fuel_bucket"
+			id: "641ACE318273962A"
+			tasks: [
+				{
+					id: "09794B81B3381C9C"
+					item: "createaddition:straw"
+					type: "item"
+				}
+				{
+					id: "66F816A9CA9EBB68"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "thermal:refined_fuel"
+					id: "4DF4BA56B93DA6AA"
+					optional_task: true
+					type: "fluid"
+				}
+			]
+			title: "{quest.4.refined_oil.title}"
+			x: -2.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["64C1F773CA05847E"]
+			description: [
+				"{quest.4.zinc.desc0}"
+				""
+				"{quest.4.zinc.desc1}"
+			]
+			icon: "create:asurine"
+			id: "7B6D55B255237469"
+			shape: "square"
+			tasks: [
+				{
+					id: "6F5014A8ADE62F33"
+					item: "thermal:device_rock_gen"
+					type: "item"
+				}
+				{
+					id: "3EFA99AC7A3ADCFB"
+					item: "create:asurine"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7538397F4F1D9284"
+					item: { Count: 3, id: "create:crushed_raw_zinc" }
+					type: "item"
+				}
+			]
+			title: "{quest.4.zinc.title}"
+			x: 1.0d
+			y: 10.5d
 		}
 	]
-	title: "Chapter 4"
+	title: "{quest.chapter_4.title}"
 }

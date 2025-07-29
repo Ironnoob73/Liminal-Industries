@@ -1,20 +1,20 @@
 {
-    "name": "Summoning an Enderman",
-    "icon": "minecraft:enderman_spawn_egg",
+    "name": "召唤一具凋零骷髅",
+    "icon": "minecraft:wither_skeleton_spawn_egg",
     "category": "patchouli:moderate_summoning",
     "pages": [
 	    {
             "type": "patchouli:entity",
-            "entity": "minecraft:enderman",
-			"name": "Summoning an Enderman",
+            "entity": "minecraft:wither_skeleton",
+			"name": "召唤一具凋零骷髅",
 			"scale": 1.0,
 			"rotate": false
         },
 		{
 			"type": "patchouli:brazier",
 			"input1": "kubejs:moderate_soul_gem",
-			"input2": "minecraft:end_stone",
-			"input3": "ae2:ender_dust",
+			"input2": "minecraft:stone_sword",
+			"input3": "minecraft:coal",
 			"input4": "kubejs:moderate_soul_gem"
 		}
 ]}

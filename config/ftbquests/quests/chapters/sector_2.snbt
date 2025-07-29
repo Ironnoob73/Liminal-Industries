@@ -11,9 +11,9 @@
 		{
 			dependencies: ["552D47F0044BE5E4"]
 			description: [
-				"The Blast furnace can produce Hot Steel. In order to cool the ingots down, you need to right-click the Hot Steel on a cauldron filled with water."
+				"{quest.3.steel.desc0}"
 				""
-				"Do note that there is a 10% chance for the steel to crack. Cracked Steel can be reheated in the blast furnace to turn it into new Hot Steel."
+				"{quest.3.steel.desc1}%{quest.3.steel.desc2}"
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "5D74C2FDCBAA0FC7"
@@ -45,7 +45,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Channel you inner Dwarf"
+			subtitle: "{quest.3.steel.subtitle}"
 			tasks: [
 				{
 					count: 27L
@@ -81,12 +81,13 @@
 					type: "item"
 				}
 			]
-			title: "Forge it while its Hot"
+			title: "{quest.3.steel.title}"
 			x: 0.0d
 			y: 27.0d
 		}
 		{
 			dependencies: ["7C0EE6F4BEE559C3"]
+			description: ["{quest.3.heavy_engineering.desc0}"]
 			id: "78F13758BBD911A0"
 			rewards: [
 				{
@@ -121,8 +122,13 @@
 					item: "farmersdelight:roast_chicken_block"
 					type: "item"
 				}
+				{
+					id: "6F5FF24398F4C5B1"
+					item: "berry_good:music_disc_fox"
+					type: "item"
+				}
 			]
-			size: 2.0d
+			size: 3.0d
 			tasks: [
 				{
 					id: "56E8E33407531F61"
@@ -139,10 +145,13 @@
 			y: 43.0d
 		}
 		{
-			dependencies: [
-				"45A3201920266E62"
-				"2ABD7837E63FB024"
+			dependencies: ["2ABD7837E63FB024"]
+			description: [
+				"{quest.3.alternator.desc0}"
+				""
+				"{quest.3.alternator.desc1}"
 			]
+			icon: "createaddition:alternator"
 			id: "54E961EC3F8CC4D9"
 			rewards: [
 				{
@@ -202,31 +211,27 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "Unlimited Raw Power"
-			tasks: [{
-				id: "61F8174A1CFB3963"
-				item: "createaddition:alternator"
-				type: "item"
-			}]
-			title: "Alternating"
+			subtitle: "{quest.3.alternator.subtitle}"
+			tasks: [
+				{
+					id: "61F8174A1CFB3963"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7D32B24C8848AF38"
+					item: { Count: 6, id: "thermal:energy_duct" }
+					type: "item"
+				}
+			]
+			title: "{quest.3.alternator.title}"
 			x: 0.0d
 			y: 20.0d
 		}
 		{
-			id: "45A3201920266E62"
-			shape: "square"
-			tasks: [{
-				count: 3L
-				id: "50A94EEA437E23DE"
-				item: "kubejs:battery"
-				type: "item"
-			}]
-			title: "AAA battery"
-			x: 0.0d
-			y: 15.5d
-		}
-		{
 			dependencies: ["151585622A7F23C3"]
+			description: ["{quest.3.dirt.desc0}"]
 			id: "4CB1AA5F6B49AC6E"
 			rewards: [{
 				id: "5293BEA140994846"
@@ -244,6 +249,11 @@
 		}
 		{
 			dependencies: ["5D74C2FDCBAA0FC7"]
+			description: [
+				"{quest.3.adv_blast_furnace.desc0}"
+				""
+				"{quest.3.adv_blast_furnace.desc1}"
+			]
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "296A0E8602688002"
 			shape: "gear"
@@ -270,10 +280,16 @@
 					}
 					type: "item"
 				}
+				{
+					count: 2L
+					id: "60EBAD5C2D5D5929"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
 			]
-			title: "Advanced Blast Furnace"
-			x: -1.5d
-			y: 29.5d
+			title: "{quest.3.adv_blast_furnace.title}"
+			x: -2.5d
+			y: 27.0d
 		}
 		{
 			dependencies: [
@@ -291,8 +307,19 @@
 		}
 		{
 			dependencies: ["4CB1AA5F6B49AC6E"]
+			description: ["{quest.3.cooking.desc0}"]
 			icon: "farmersdelight:cabbage_seeds"
 			id: "6FDBD3A1B63D8498"
+			rewards: [{
+				id: "730B47494A746DA5"
+				item: {
+					Count: 1
+					id: "farmersdelight:stuffed_pumpkin_block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "{quest.3.cooking.subtitle}"
 			tasks: [
 				{
 					id: "5A9303D98226924D"
@@ -325,12 +352,19 @@
 					type: "item"
 				}
 			]
-			title: "Liminal Chef"
+			title: "{quest.3.cooking.title}"
 			x: 5.0d
 			y: 37.0d
 		}
 		{
 			dependencies: ["32A38D7CD715768D"]
+			description: [
+				"{quest.3.bamboo.desc0}"
+				""
+				"{quest.3.bamboo.desc1}"
+				""
+				"{quest.3.bamboo.desc2}"
+			]
 			icon: "minecraft:bamboo"
 			id: "55B7C4D0E5890406"
 			rewards: [{
@@ -363,7 +397,7 @@
 					type: "item"
 				}
 			]
-			title: "Renewable Wood"
+			title: "{quest.3.bamboo.title}"
 			x: 8.0d
 			y: 23.0d
 		}
@@ -399,7 +433,7 @@
 					type: "item"
 				}
 			]
-			title: "Renewable Redstone"
+			title: "{quest.3.redstone.title}"
 			x: 8.0d
 			y: 27.0d
 		}
@@ -409,33 +443,40 @@
 			id: "3F5758647B93803C"
 			tasks: [
 				{
-					id: "40AFEC468D871ED9"
+					id: "77AE8111728C33E8"
 					item: "refurbished_furniture:light_stove"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0623A2305E415BF9"
+					item: "refurbished_furniture:light_fridge"
+					optional_task: true
 					type: "item"
 				}
 				{
 					amount: 1000L
 					fluid: "tconstruct:molten_iron"
-					id: "2F66DD8CEF403E44"
+					id: "1EB33E4B44C9B0E8"
 					optional_task: true
 					type: "fluid"
 				}
 				{
-					id: "0E00A68E49E97B5E"
+					id: "01A2A395789E1158"
 					item: "minecraft:iron_ingot"
 					type: "item"
 				}
 			]
-			title: "Collecting Rust"
+			title: "{quest.3.iron.title}"
 			x: 5.0d
 			y: 5.0d
 		}
 		{
-			description: ["Throwing bricks at the ceiling lamps might yeald some important compontens for the upcomming industrial revolution."]
+			description: ["{quest.3.vandalism_2.desc0}"]
 			icon: "kubejs:fluorescent_tube"
 			id: "3EEB10E1DC378F7A"
 			shape: "square"
-			subtitle: "Lights Out"
+			subtitle: "{quest.3.vandalism_2.subtitle}"
 			tasks: [
 				{
 					count: 3L
@@ -449,7 +490,7 @@
 					type: "item"
 				}
 			]
-			title: "Vandalism 2.0"
+			title: "{quest.3.vandalism_2.title}"
 			x: 8.0d
 			y: 13.0d
 		}
@@ -494,12 +535,26 @@
 					type: "item"
 				}
 			]
-			title: "Light Engineering"
+			title: "{quest.3.light_engineering.title}"
 			x: 5.0d
 			y: 13.0d
 		}
 		{
 			dependencies: ["2ABD7837E63FB024"]
+			description: [
+				"{quest.3.rock_gen.desc0}"
+				"{quest.3.rock_gen.desc1}"
+				""
+				"{quest.3.rock_gen.desc2}"
+				""
+				"{quest.3.rock_gen.desc3}"
+				"{quest.3.rock_gen.desc4}"
+				""
+				"{quest.3.rock_gen.desc5}"
+				"{quest.3.rock_gen.desc6}"
+				""
+				"{quest.3.rock_gen.desc7}"
+			]
 			id: "451A79187DD84C9A"
 			shape: "gear"
 			tasks: [{
@@ -527,34 +582,51 @@
 					type: "item"
 				}
 			]
-			title: "Glue Extractor"
+			title: "{quest.3.glue.title}"
 			x: 5.0d
 			y: 23.0d
 		}
 		{
 			dependencies: ["0D7F62210B243747"]
 			description: [
-				"Soulshards can be obtained by performing a soul crystallization ritual near undead mobs. Skulked Husks are probably your best option for this."
+				"{quest.3.soul_shard.desc0}"
 				""
-				"You can consult the Ars Ecclesia for more detailed information."
+				"{quest.3.soul_shard.desc1}"
+				""
+				"{quest.3.soul_shard.desc2}"
 			]
+			icon: "eidolon:soul_shard"
 			id: "0E75315018995DB6"
-			subtitle: "Crystallise the Undead"
-			tasks: [{
-				id: "6BA2C33CE05617B7"
-				item: "eidolon:soul_shard"
-				type: "item"
-			}]
+			subtitle: "{quest.3.soul_shard.subtitle}"
+			tasks: [
+				{
+					id: "201B8879CE0612C5"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "75602215F1FD6138"
+					item: { Count: 2, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					id: "0318EDC1E7C05032"
+					item: "eidolon:soul_shard"
+					type: "item"
+				}
+			]
+			title: "{quest.3.soul_shard.title}"
 			x: -3.5d
 			y: 10.5d
 		}
 		{
 			dependencies: ["7946525AFF6543C5"]
 			description: [
-				"The Barzier Circle can do all kinds of rituals."
+				"{quest.3.brazier.desc0}"
 				""
-				"One of the most noteworthy is the abillity to summon mobs."
-				"Consult the \"Ars Eccelecia\" and \"Summoning 101\" for more information."
+				"{quest.3.brazier.desc1}"
+				"{quest.3.brazier.desc2}"
 			]
 			icon: "eidolon:brazier"
 			id: "0D7F62210B243747"
@@ -589,7 +661,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "My Friend Thinks he is a Wizard"
+			subtitle: "{quest.3.brazier.subtitle}"
 			tasks: [
 				{
 					id: "0035CE29CA1EB46B"
@@ -603,7 +675,7 @@
 					type: "item"
 				}
 			]
-			title: "Enter the Circle"
+			title: "{quest.3.brazier.title}"
 			x: -5.0d
 			y: 8.0d
 		}
@@ -612,6 +684,13 @@
 				"0E75315018995DB6"
 				"78D4CF60C217CDED"
 				"68DFDA75DA5FB0E9"
+			]
+			description: [
+				"{quest.3.crucible.desc0}"
+				""
+				"{quest.3.crucible.desc1}"
+				""
+				"{quest.3.crucible.desc2}"
 			]
 			id: "33C923AD98680D89"
 			rewards: [{
@@ -645,22 +724,29 @@
 				{
 					id: "3313F83A86A4A453"
 					item: "cfm_circuit_breaker:circuit_breaker"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D3C3DC1266DB43F"
+					item: "refurbished_furniture:light_electricity_generator"
+					optional_task: true
 					type: "item"
 				}
 				{
 					amount: 1000L
 					fluid: "tconstruct:molten_gold"
-					id: "184FDA730CB1644C"
+					id: "4A60BF6D235E4AB4"
 					optional_task: true
 					type: "fluid"
 				}
 				{
-					id: "648EEB69F0FE5741"
+					id: "64AB24251302FBE0"
 					item: "minecraft:gold_ingot"
 					type: "item"
 				}
 			]
-			title: "Not all that Glitters"
+			title: "{quest.3.gold.title}"
 			x: 0.0d
 			y: 5.0d
 		}
@@ -681,19 +767,25 @@
 					type: "item"
 				}
 				{
+					id: "318F6B148DA52DFF"
+					item: "mekanism:radioactive_waste_barrel"
+					optional_task: true
+					type: "item"
+				}
+				{
 					amount: 1000L
 					fluid: "tconstruct:molten_lead"
-					id: "1D5E8FE028393548"
+					id: "3119D4A74C9F7686"
 					optional_task: true
 					type: "fluid"
 				}
 				{
-					id: "7CE6509D5E0368BA"
+					id: "3FA9BA8E63582EE5"
 					item: "thermal:lead_ingot"
 					type: "item"
 				}
 			]
-			title: "Ya-harr!"
+			title: "{quest.3.lead.title}"
 			x: -5.0d
 			y: 5.0d
 		}
@@ -702,19 +794,29 @@
 				"0D7F62210B243747"
 				"0E75315018995DB6"
 			]
+			description: [
+				"{quest.3.cod.desc0}"
+				""
+				"{quest.3.cod.desc1}"
+			]
 			id: "68DFDA75DA5FB0E9"
+			rewards: [{
+				id: "2FE3FB4DBD842CC5"
+				item: "farmersdelight:fish_stew"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D228A8CB5F03B89"
 				item: "minecraft:cod"
 				type: "item"
 			}]
-			title: "Summoning Cod"
+			title: "{quest.3.cod.title}"
 			x: -6.5d
 			y: 10.5d
 		}
 		{
 			dependencies: ["33C923AD98680D89"]
-			description: ["Using the wand you can turn Bricks into Netherbricks by firing the wand at bricks that are on the floor in item form."]
+			description: ["{quest.3.soulfire_wand.desc0}"]
 			icon: {
 				Count: 1
 				id: "eidolon:soulfire_wand"
@@ -737,7 +839,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Avadaaaaa..."
+			subtitle: "{quest.3.soulfire_wand.subtitle}"
 			tasks: [
 				{
 					id: "40C6AB291E6B2779"
@@ -769,6 +871,11 @@
 				"3F5758647B93803C"
 				"02553A61954B8BE9"
 			]
+			description: [
+				"{quest.3.runic_altar.desc0}"
+				""
+				"{quest.3.runic_altar.desc1}"
+			]
 			id: "78D4CF60C217CDED"
 			rewards: [{
 				id: "56F4E334743C0ACE"
@@ -786,9 +893,10 @@
 			y: 13.0d
 		}
 		{
+			dependencies: ["60DCFFC671BBD126"]
 			id: "3DB2E63B62BA0311"
 			shape: "gear"
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
 				id: "56D5F49C5A7C9543"
 				item: "tconstruct:smeltery_controller"
@@ -799,6 +907,11 @@
 		}
 		{
 			dependencies: ["68905617A5751CBB"]
+			description: [
+				"{quest.3.mana_pool.desc0}"
+				""
+				"{quest.3.mana_pool.desc1}"
+			]
 			icon: "botania:diluted_pool"
 			id: "02553A61954B8BE9"
 			tasks: [
@@ -823,6 +936,7 @@
 		}
 		{
 			dependencies: ["65D2BC79CD4D885B"]
+			description: ["{quest.3.me_chest.desc0}"]
 			icon: "ae2:chest"
 			id: "754899C65C2540E0"
 			rewards: [
@@ -854,6 +968,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "{quest.3.me_chest.subtitle}"
 			tasks: [
 				{
 					id: "1757AE495DF47591"
@@ -871,6 +986,16 @@
 		}
 		{
 			dependencies: ["54E961EC3F8CC4D9"]
+			description: [
+				"{quest.3.crystallizer.desc0}"
+				""
+				"{quest.3.crystallizer.desc1}"
+				""
+				"{quest.3.crystallizer.desc2}"
+				"{quest.3.crystallizer.desc3}"
+				"{quest.3.crystallizer.desc4}"
+				"{quest.3.crystallizer.desc5}"
+			]
 			id: "65D2BC79CD4D885B"
 			shape: "gear"
 			tasks: [{
@@ -893,23 +1018,20 @@
 			y: 37.0d
 		}
 		{
-			dependencies: [
-				"246A2048B0070B20"
-				"2ABD7837E63FB024"
-			]
+			dependencies: ["2ABD7837E63FB024"]
 			description: [
-				"In order for the Sculk Scrubber to function, it must be placed above a block of Sculk."
+				"{quest.3.scrubber.desc0}"
 				""
-				"When you have done this correctly, it can be right-clicked in order to activate the machine."
+				"{quest.3.scrubber.desc1}"
 				""
-				"Upon activation it will start absorbing the sculk, leaving a strange but safe porous stone behind."
+				"{quest.3.scrubber.desc2}"
 				""
-				"It should be noted that nothing can be placed directly on the sculk, not even the sculk scrubber. In order to get it in the right position, you need to place it on the side of a non-sculk block. "
+				"{quest.3.scrubber.desc3}"
 			]
 			icon: "kubejs:sculk_scrubber"
 			id: "21DFDC2132AC4257"
 			shape: "gear"
-			subtitle: "Cleaning Simulator"
+			subtitle: "{quest.3.scrubber.subtitle}"
 			tasks: [{
 				id: "31E4E088F9C965B0"
 				item: "kubejs:sculk_scrubber"
@@ -920,6 +1042,13 @@
 		}
 		{
 			dependencies: ["32A38D7CD715768D"]
+			description: [
+				"{quest.3.keg.desc0}"
+				""
+				"{quest.3.keg.desc1}"
+				""
+				"{quest.3.keg.desc2}"
+			]
 			id: "151585622A7F23C3"
 			rewards: [
 				{
@@ -941,7 +1070,7 @@
 				item: "brewinandchewin:keg"
 				type: "item"
 			}]
-			title: "Fermentation for Intoxication"
+			title: "{quest.3.keg.title}"
 			x: 5.0d
 			y: 27.0d
 		}
@@ -967,7 +1096,7 @@
 					type: "item"
 				}
 			]
-			title: "Blue Magic"
+			title: "{quest.3.lapis_lazuil.title}"
 			x: -3.5d
 			y: 15.5d
 		}
@@ -1003,16 +1132,26 @@
 					type: "item"
 				}
 			]
-			title: "Renewable Glowstone"
+			title: "{quest.3.glowstone.title}"
 			x: 8.0d
 			y: 29.0d
 		}
 		{
 			dependencies: ["5D74C2FDCBAA0FC7"]
+			description: [
+				"{quest.3.mixer.desc0}"
+				""
+				"{quest.3.mixer.desc1}"
+			]
 			icon: "immersiveengineering:mixer"
 			id: "070593BCE7387349"
+			rewards: [{
+				id: "6C9106C9AA3F0750"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
 			shape: "gear"
-			subtitle: "Mix Harder!"
+			subtitle: "{quest.3.mixer.subtitle}"
 			tasks: [
 				{
 					count: 3L
@@ -1054,8 +1193,18 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "711D42BB677A521F"
+					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "09006B2354632FAA"
+					item: "create:filter"
+					type: "item"
+				}
 			]
-			title: "Industrial Mixer"
+			title: "{quest.3.mixer.title}"
 			x: 0.0d
 			y: 31.0d
 		}
@@ -1102,12 +1251,13 @@
 					type: "item"
 				}
 			]
-			title: "The Boarding Party is Here"
+			title: "{quest.3.musket.title}"
 			x: -8.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["33C923AD98680D89"]
+			description: ["{quest.3.leather.desc0}"]
 			icon: "sophisticatedbackpacks:backpack"
 			id: "20CA5E31A6BC6960"
 			rewards: [
@@ -1140,7 +1290,7 @@
 					type: "item"
 				}
 			]
-			title: "Leather for Backpacks"
+			title: "{quest.3.leather.title}"
 			x: -6.5d
 			y: 15.5d
 		}
@@ -1161,7 +1311,7 @@
 				}
 				type: "item"
 			}]
-			title: "Walkie-Talkie"
+			title: "{quest.3.walkie_talkie.title}"
 			x: 8.0d
 			y: 5.0d
 		}
@@ -1169,10 +1319,10 @@
 			can_repeat: true
 			dependencies: ["0D7F62210B243747"]
 			description: [
-				"Summoning mobs with magic is essential since they will not spawn naturally."
-				"JEI is not super clear about this, but luckily there is this handy guidebook to point you in the right direction."
+				"{quest.3.summoning_101.desc0}"
+				"{quest.3.summoning_101.desc1}"
 				""
-				"Simply put the ingedients down as discribed and ignite the charcoal on the brazier in order to start the summoning process."
+				"{quest.3.summoning_101.desc2}"
 			]
 			icon: "eidolon:research_notes"
 			id: "07122161E18E96C1"
@@ -1190,10 +1340,10 @@
 			shape: "square"
 			tasks: [{
 				id: "50A47622AC51ADE4"
-				title: "I have acquired knowlege"
+				title: "{quest.3.summoning_101.check}"
 				type: "checkmark"
 			}]
-			title: "Summoning 101"
+			title: "{quest.3.summoning_101.title}"
 			x: -3.5d
 			y: 8.0d
 		}
@@ -1218,14 +1368,19 @@
 					type: "item"
 				}
 			]
-			title: "Echoes in the Dark"
-			x: 1.5d
+			title: "{quest.3.echo_shard.title}"
+			x: 2.5d
 			y: 29.5d
 		}
 		{
 			dependencies: [
 				"151585622A7F23C3"
 				"5D74C2FDCBAA0FC7"
+			]
+			description: [
+				"{quest.3.forged_eye.desc0}"
+				""
+				"{quest.3.forged_eye.desc1}"
 			]
 			id: "6C0922865829A7FE"
 			shape: "hexagon"
@@ -1270,15 +1425,15 @@
 					type: "item"
 				}
 			]
-			title: "This place could use some Automated Sweeping"
-			x: 1.5d
+			title: "{quest.3.auto_sweeping.title}"
+			x: 2.5d
 			y: 31.0d
 		}
 		{
 			dependencies: ["33C923AD98680D89"]
-			description: ["With the Time in a Bottle, you can accelerate single blocks using the amount of time you have had the Bottle in your inventory."]
+			description: ["{quest.3.time_bottle.desc0}"]
 			id: "54A8A17145E7BBD0"
-			subtitle: "The Best Item in the Pack"
+			subtitle: "{quest.3.time_bottle.subtitle}"
 			tasks: [{
 				id: "1B4B79A0B1BA4478"
 				item: {
@@ -1288,7 +1443,7 @@
 				}
 				type: "item"
 			}]
-			title: "Perfectly Looped Time"
+			title: "{quest.3.time_bottle.title}"
 			x: -8.0d
 			y: 13.0d
 		}
@@ -1302,48 +1457,6 @@
 			}]
 			x: 8.0d
 			y: 31.0d
-		}
-		{
-			dependencies: ["54A8A17145E7BBD0"]
-			icon: {
-				Count: 1
-				id: "endrem:old_eye"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "28DF9CE983663C3C"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "55021825E59E0198"
-					item: {
-						Count: 1
-						id: "tiab:time_in_a_bottle"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "4D4702F3ACEBFD49"
-					item: "kubejs:overclocked_clock"
-					type: "item"
-				}
-				{
-					id: "47625808B48C6DBB"
-					item: {
-						Count: 1
-						id: "endrem:old_eye"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Old Eye"
-			x: -11.0d
-			y: 13.0d
 		}
 		{
 			dependencies: ["3F5758647B93803C"]
@@ -1360,7 +1473,7 @@
 				item: "thermal:area_radius_augment"
 				type: "item"
 			}]
-			subtitle: "Bzzzzzzz"
+			subtitle: "{quest.3.powertools.subtitle}"
 			tasks: [
 				{
 					id: "6A6A8D6820D9F7F0"
@@ -1386,15 +1499,16 @@
 					type: "item"
 				}
 			]
-			title: "Powertools"
+			title: "{quest.3.powertools.title}"
 			x: 8.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
 				"3F5758647B93803C"
 				"68905617A5751CBB"
 			]
+			description: ["{quest.3.post_office.desc0}"]
 			icon: "create:stock_ticker"
 			id: "1FF2EB0F973B393B"
 			rewards: [
@@ -1460,7 +1574,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Cardboard Warrior"
+			subtitle: "{quest.3.post_office.subtitle}"
 			tasks: [
 				{
 					id: "603BFEA945910111"
@@ -1496,16 +1610,16 @@
 					type: "item"
 				}
 			]
-			title: "Starting a Post Office"
+			title: "{quest.3.post_office.title}"
 			x: 2.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["552D47F0044BE5E4"]
 			description: [
-				"You can convert Empty Fuses into Soul Fuses using the soul wand."
+				"{quest.3.soul_fuse.desc0}"
 				""
-				"Simply drop the Empty Fuses on the ground and hit them with the soul wand."
+				"{quest.3.soul_fuse.desc1}"
 			]
 			icon: "kubejs:soul_fuse"
 			id: "34E24CF953EB8B77"
@@ -1514,7 +1628,7 @@
 				item: "supplementaries:confetti_popper"
 				type: "item"
 			}]
-			subtitle: "Trapped Souls"
+			subtitle: "{quest.3.soul_fuse.subtitle}"
 			tasks: [
 				{
 					id: "495CA98D59DAA689"
@@ -1527,10 +1641,197 @@
 					type: "item"
 				}
 			]
-			title: "Soul Fuse"
+			title: "{quest.3.soul_fuse.title}"
 			x: -5.0d
 			y: 23.5d
 		}
+		{
+			dependencies: ["3EEB10E1DC378F7A"]
+			description: [
+				"{quest.3.restoring.desc0}"
+				""
+				"{quest.3.restoring.desc1}"
+				""
+				"{quest.3.restoring.desc2}"
+				""
+				"{quest.3.restoring.desc3}"
+				""
+				"{quest.3.restoring.desc4}"
+				""
+				""
+				"{quest.3.restoring.desc5}"
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "240D7B64E63FCE4F"
+			subtitle: "{quest.3.restoring.subtitle}"
+			tasks: [
+				{
+					id: "77BA9C13CBC2B1B7"
+					item: "kubejs:fluorescent_tube"
+					type: "item"
+				}
+				{
+					id: "0EFA283BF071CBDF"
+					item: "kubejs:cut_carpet"
+					type: "item"
+				}
+				{
+					id: "2FEB48503476AD71"
+					item: "kubejs:wallpaper"
+					type: "item"
+				}
+			]
+			title: "{quest.3.restoring.title}"
+			x: 11.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["070593BCE7387349"]
+			description: [
+				"{quest.3.renewable_lead.desc0}"
+				""
+				"{quest.3.renewable_lead.desc1}"
+				"{quest.3.renewable_lead.desc2}"
+			]
+			icon: "thermal:lead_ingot"
+			id: "69C338CC94D0129F"
+			subtitle: "{quest.3.renewable_lead.subtitle}"
+			tasks: [
+				{
+					id: "4320019E3B2DD7EE"
+					title: "{quest.3.renewable_lead.check}"
+					type: "checkmark"
+				}
+				{
+					id: "32874CED3C00136F"
+					item: "thermal:lead_dust"
+					type: "item"
+				}
+			]
+			title: "{quest.3.renewable_lead.title}"
+			x: 2.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["3F5758647B93803C"]
+			description: [
+				"{quest.3.putty_knife.desc0}"
+				""
+				"{quest.3.putty_knife.desc1}"
+			]
+			icon: "kubejs:putty_knife"
+			id: "383ABAC05F6FC6F0"
+			tasks: [{
+				id: "313AC7881A8B9B53"
+				item: "kubejs:putty_knife"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["451A79187DD84C9A"]
+			description: ["{quest.3.endless_lava.desc0}"]
+			icon: "kubejs:cobblestone_bucket"
+			id: "3A9977E34730F5AB"
+			rewards: [{
+				count: 3
+				id: "639FB2F7E2B9EAE7"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6F8E7944297490E6"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "035866028DEFF9CF"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "01BE9593EA428489"
+					item: "kubejs:cobblestone_bucket"
+					type: "item"
+				}
+				{
+					id: "5A5A6055E95E2FF3"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			title: "{quest.3.endless_lava.title}"
+			x: 8.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["3DB2E63B62BA0311"]
+			icon: "minecraft:jukebox"
+			id: "5D6B1E47B0B431EF"
+			subtitle: "{quest.3.diamond.subtitle}"
+			tasks: [
+				{
+					id: "15ADEA9F69B2672C"
+					item: "minecraft:jukebox"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AE7F6506A734389"
+					item: "refurbished_furniture:computer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "tconstruct:molten_diamond"
+					id: "17653A58B8E4D93F"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "059CBB7422A9BF95"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "{quest.3.diamond.title}"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55B7C4D0E5890406"]
+			description: [
+				"{quest.3.carbon.desc0}"
+				""
+				"{quest.3.carbon.desc1}"
+			]
+			icon: "minecraft:charcoal"
+			id: "68E4B9DBC0F448C7"
+			tasks: [
+				{
+					id: "5E63774D79DBDB55"
+					item: "minecraft:bamboo_block"
+					type: "item"
+				}
+				{
+					id: "2E6E916680E55D7D"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+			]
+			title: "{quest.3.carbon.title}"
+			x: 11.0d
+			y: 23.0d
+		}
 	]
-	title: "Chapter 3"
+	title: "{quest.chapter_3.title}"
 }

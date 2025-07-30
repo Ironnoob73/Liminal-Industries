@@ -24,11 +24,11 @@
 				"7176C957BE2530E0"
 			]
 			description: [
-				"In order to get back to the overworld, all 12 eyes must be collected and placed in the portal frame. "
+				"{quest.esc.portal.desc0}"
 				""
-				"Only a single room is generated with a portal frame. The room has 4 entrances and an ominous heartbeat echoing from within."
+				"{quest.esc.portal.desc1}"
 				""
-				"If you are ever confused, look back in the questbook on how to obtain the different eyes."
+				"{quest.esc.portal.desc2}"
 			]
 			icon: "endrem:ancient_portal_frame"
 			id: "54C2818EE0D113D9"

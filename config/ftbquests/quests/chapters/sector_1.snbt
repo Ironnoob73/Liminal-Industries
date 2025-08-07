@@ -954,9 +954,9 @@
 		{
 			dependencies: ["74DC667B840746B0"]
 			description: [
-				"It might be good to document this liminal place by snapping some pictures. "
+				"{quest.1.camera.desc0}"
 				""
-				"You can take pictures and develop them using the Lightroom."
+				"{quest.1.camera.desc1}"
 			]
 			icon: "exposure:camera"
 			id: "154EA3B6DA433B32"
@@ -997,24 +997,24 @@
 					type: "item"
 				}
 			]
-			subtitle: "Say, Cheeese!"
+			subtitle: "{quest.1.camera.subtitle}"
 			tasks: [{
 				id: "77163A3019953861"
 				item: "exposure:lightroom"
 				type: "item"
 			}]
-			title: "Pose for the Camera!"
+			title: "{quest.1.camera.title}"
 			x: 5.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["74DC667B840746B0"]
 			description: [
-				"It is very important that you automate as many tasks as possible. After chapter 2, automation is almost a must if you want to be able to progress efficiently."
+				"{quest.1.automate.desc0}"
 				""
-				"Taking the time to automate a task by making extra dedicated machines is almost always worth it compared to doing everything by hand."
+				"{quest.1.automate.desc1}"
 				""
-				"It is technically possible to do everything manually, but it is far from ideal and will take a very long time."
+				"{quest.1.automate.desc2}"
 			]
 			icon: "thermal:iron_gear"
 			id: "43F1C034FE7AFD77"
@@ -1031,13 +1031,13 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Yes, Everything"
+			subtitle: "{quest.1.automate.subtitle}"
 			tasks: [{
 				id: "19C7F5178EA21585"
-				title: "Liminality shall make room for automation"
+				title: "{quest.1.automate.check}"
 				type: "checkmark"
 			}]
-			title: "Automate Everything!"
+			title: "{quest.1.automate.title}"
 			x: 2.5d
 			y: 3.5d
 		}

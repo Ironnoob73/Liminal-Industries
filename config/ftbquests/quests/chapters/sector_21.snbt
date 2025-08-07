@@ -777,13 +777,13 @@
 		{
 			dependencies: ["495E194ACEFD9CD7"]
 			description: [
-				"With Mystical Flowers you can make all the dyes. "
+				"{quest.2.paint.desc0}"
 				""
-				"This will allow you to start painting with other colours than just yellow."
+				"{quest.2.paint.desc1}"
 				""
-				"You can add dyes to your palette by crafting the palette and dyes together on a crafting table."
+				"{quest.2.paint.desc2}"
 				""
-				"It is now also possible to develop colour film in the Lightroom."
+				"{quest.2.paint.desc3}"
 			]
 			icon: "xercapaint:item_easel"
 			id: "63B870600FBEBB1D"
@@ -800,7 +800,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Taste the Rainbow!"
+			subtitle: "{quest.2.paint.subtitle}"
 			tasks: [
 				{
 					id: "4C1121ADF7D94181"
@@ -813,13 +813,13 @@
 					type: "item"
 				}
 			]
-			title: "Time to Paint"
+			title: "{quest.2.paint.title}"
 			x: 7.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["021C50BEE88E0B07"]
-			description: ["Backpacks can be made using leather crafted from scrapping books."]
+			description: ["{quest.2.leather.desc0}"]
 			icon: "sophisticatedbackpacks:backpack"
 			id: "20CA5E31A6BC6960"
 			rewards: [
@@ -852,7 +852,7 @@
 					type: "item"
 				}
 			]
-			title: "Leather for Backpacks"
+			title: "{quest.2.leather.title}"
 			x: 7.5d
 			y: 5.0d
 		}

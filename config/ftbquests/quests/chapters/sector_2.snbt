@@ -36,7 +36,7 @@
 						id: "immersiveengineering:stick_steel"
 						tag: {
 							display: {
-								Lore: ["{\"text\":\"Don't drop this\"}"]
+								Lore: ["{\"translate\":\"quest.3.steel.reward_tooltip\"}"]
 							}
 						}
 					}
@@ -700,7 +700,7 @@
 					id: "kubejs:sentimental_thaumium"
 					tag: {
 						display: {
-							Lore: ["{\"text\":\"Warning: Sentimental use only!\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}"]
+							Lore: ["{\"translate\":\"quest.3.crucible.reward_tooltip\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}"]
 						}
 					}
 				}
@@ -1617,12 +1617,12 @@
 				""
 				"{quest.3.restoring.desc3}"
 				""
-				"- Right-clicking Timber Frames with wallpaper will create Fake Wallpaper"
-				""
 				"{quest.3.restoring.desc4}"
 				""
-				""
 				"{quest.3.restoring.desc5}"
+				""
+				""
+				"{quest.3.restoring.desc6}"
 			]
 			icon: {
 				Count: 1

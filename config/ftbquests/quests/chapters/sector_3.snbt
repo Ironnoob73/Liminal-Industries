@@ -1221,9 +1221,9 @@
 		{
 			dependencies: ["246A2048B0070B20"]
 			description: [
-				"The Wall Piercer can be used to destroy the near-indestructible walls of the backrooms."
+				"{quest.4.wall_piercer.desc0}"
 				""
-				"Simply place a Wall Piercer on either side of a wall and right-click on one of them to remove the block that is between them."
+				"{quest.4.wall_piercer.desc1}"
 				""
 				""
 				"{image:kubejs:textures/quests/wall_piercer.png width:190 height:100 align:center}"
@@ -1234,14 +1234,14 @@
 				item: "kubejs:party_popper"
 				type: "item"
 			}]
-			subtitle: "Parry This!"
+			subtitle: "{quest.4.wall_piercer.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "119B313DB024BF24"
 				item: { Count: 2, id: "kubejs:wall_destroyer" }
 				type: "item"
 			}]
-			title: "The Wall Piercer"
+			title: "{quest.4.wall_piercer.title}"
 			x: 4.0d
 			y: 18.5d
 		}
